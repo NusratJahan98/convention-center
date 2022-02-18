@@ -12,8 +12,8 @@
 </head>
 <body>
     <!-- section navbar start -->
-    <section class="Navbar">
-     <div class="nav">
+    <section class="Navbar navbar-light fixed-top bg-light shadow-sm">
+     <div class="nav ">
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
@@ -22,24 +22,14 @@
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
-                    <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold">Subscribe</a>
-                            </li>
+                            <li><a class="nav-link fw-bold active" aria-current="page" href="#home">Home</a></li>
+                            <li><a class="nav-link fw-bold active" href="#about">About Us</a></li>
+                            <li><a class="nav-link fw-bold active" href="#contact">Contact</a></li>
+                            <li><a class="nav-link fw-bold active" href="#clients">Subscribe</a></li>
                         </ul>
                     </div>
-
-
                 </div>
             </nav>
          </div>
@@ -47,8 +37,11 @@
     </section>
     <!-- section navbar end -->
 
-    <!-- section home start -->
-<section class="home ">
+
+
+
+    <!--home section start -->
+<section class="home py-5" id="home">
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -87,17 +80,20 @@
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-    </button>
+     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
 </section>
-<!-- section home end -->
+<!--home section end -->
+
+
+
 
 <!-- section about start-->
-<section class="About py-5">
+<section class="About py-5" id="about">
     <div class="container-lg ">
       <div class="col-12">
          <div class="row d-flex">
@@ -131,7 +127,6 @@
                 <textarea class="form-control " placeholder="Event Decoration" style="height: 200px"></textarea>
             </div>
         </div>
-    
         <div class="colum d-flex justify-content-between">
             <div class="col-md-5">
                 <label for="inputEmail4" class="form-label w-100">Event Date</label>
@@ -148,8 +143,6 @@
              Submit</button>
          </div>
     </div>
- 
-
                     <div class="col-md-7 d-flex align-items-center">
                         <div class="about-contant p-5  ">
                             <h1>Every moment is Precious</h1>
@@ -173,11 +166,8 @@
 
 
 
-
-
-
 <!-- section  contact start-->
-<section class="contact ">
+<section class="contact" id="contact">
  <div class="container py-5">
      <div class="row text-center">
                     <div class="section-head">
@@ -295,11 +285,8 @@
 
 
 
-
-
-
 <!--  clients section start -->
-<section class="clients-happy">
+<section class="clients-happy" id="clients">
     <div class="container py-5">
       <div class="row justify-content-center">
        <div class="col-lg-8">
@@ -341,17 +328,17 @@
                         many more days you need
                         to work to reach your financial
                         goal for the month and year.</p>
-                </div>
+            </div>
                 <img src="images/clients/person 1.png" alt="">
                 <h1 class="fs-5 py-2 fw-bold">Cret Yater</h1>
                 <h3 class="fs-5 py-2 ">Banker</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
 </div>
 </section>
 <!--  clients section end -->
@@ -360,7 +347,7 @@
 
 
  <!--Frequently section start  -->
-<section class="Frequently">
+<section class="Frequently" id="Frequently">
 <div class="container-lg py-4">
     <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -369,11 +356,8 @@
             </div>
         </div>
     </div>
-
 <div class="col-12">
     <div class="row">
-    
-    
         <div class="col-md-6">
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item py-3">
@@ -440,7 +424,7 @@
                    </div>
                  </div>
           <div class="col-6">
-            <div class="img">
+            <div class="img w-100">
                 <img src="images/fre/people.png" alt="img">
             </div>
         </div>
@@ -451,40 +435,55 @@
 
 
 
+  <!-- footer section start -->
+<footer class="footer-part bg-dark">
+    <div class="container">
+        <div class="row d-flex align-items-center py-5">
+            <div class="col-12 col-md-6 col-lg-6  ">
+                    <p class="text-light  ">
+                        &#169; 2022 <a href="" class="text-warning ">EVENT POINT</a>. All
+                        rights reserved
+                    </p>
+               </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <h1 class="text-light text-end d-flex justify-content-sm-end">Get the App</h1>
 
+                <div class="play-store d-flex justify-content-sm-end align-items-center">
+                    <a href="" class="text-decoration-none">
+                        <div class="row border border-white rounded py-2 px-4 align-items-center bg-dark">
+                            <div class="col-2 px-0">
+                                <i class="fa fa-apple text-light fs-1"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="text-light my-0">Download on the</p>
+                                <p class="text-light my-0 fs-3 fw-bold">App Store</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="play-store d-flex justify-content-sm-end align-items-center mt-3">
+                    <a href="" class="text-decoration-none">
+                        <div class="row border border-white rounded py-2 px-4 align-items-center bg-dark">
+                            <div class="col-2 px-0">
+                                <i class="fa fa-facebook fs-1 text-light"></i>
+                            </div>
+                            <div class="col-10 w-600">
+                                <p class="text-light my-0">GET IT ON</p>
+                                <p class="text-light my-0 fs-4 fw-bold">GooglePlay</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
  <!-- footer section start -->
- <section class="footer bg-dark">
-     <div class="container py-5">
-         <div class="footer-contant">
-             <div class="row">
-                 <div class="col">
-                     <div class="shal   d-flex align-items-center">
-                        <p class="m-0 text-center text-muted">&copy;2020 bike. All rights reserved</p>
-                     </div>
-                 </div>
-                 <div class="col">
-                     <div class="contant d-flex justify-content-end">
-                         <h1 class="tex text-light fs-4 ">Get the App</h1>
-                      
-                     </div>
-                     <div class="button d-flex  justify-content-end">
-                    <button type="button" class="btn btn-secondary btn-lg">
-                     <div class="icon d-flex align-items-center ">
-                        <i class="fa fa-apple"></i>
-                      </div>
-                        <h3 class="name fs-6  ">Download on the</h3>
-                        <h3 class="app  ">App Store</h3>
-                    </button>
-                     </div>
-                    <div class="button">
-                    <button type="button" class="btn btn-secondary btn-lg ">Large button</button>
-                   </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </section>
-<!-- footer section start -->
+
+
+
+
+
 
 
 
